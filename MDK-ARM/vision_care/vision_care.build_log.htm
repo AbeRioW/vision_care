@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 123, 123, LIC=X96CK-Z1IKU-UH78H-WCMNB-46UJD-7EQKS
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\programFiles\KEIL5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\dell\Desktop\vision_care\MDK-ARM\vision_care.uvprojx
+Project File Date:  02/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\programFiles\KEIL5\ARM\ARMCC\Bin'
+Build target 'vision_care'
+compiling ui_home.c...
+..\UI\ui_home.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UI\ui_setting.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UI\ui_home.c(141): warning:  #1-D: last line of file ends without a newline
+  }
+..\UI\ui_home.c(16): warning:  #177-D: variable "uart_too_close"  was declared but never referenced
+  static uint8_t  uart_too_close[19]={0xFD,0x00,0x10,0x01,0x01,0xBE,0xE0,0xC0,0xEB,0xCC,0xAB,0xBD,0xFC,0xC7,0xEB,0xD7,0xF8,0xD6,0xB1};  //距离太近请坐直
+..\UI\ui_home.c(17): warning:  #177-D: variable "uart_too_dark"  was declared but never referenced
+  static uint8_t  uart_too_dark[13]={0xFD,0x00,0x0A,0x01,0x01,0xB9,0xE2,0xCF,0xDF,0xCC,0xAB,0xB0,0xB5};    //光线太暗
+..\UI\ui_home.c(18): warning:  #177-D: variable "uart_too_light"  was declared but never referenced
+  static uint8_t  uart_too_light[13]= {0xFD,0x00,0x0A,0x01,0x01,0xB9,0xE2,0xCF,0xDF,0xCC,0xAB,0xC7,0xBF};    //光线太亮
+..\UI\ui_home.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=20796 RO-data=8056 RW-data=56 ZI-data=2640  
+FromELF: creating hex file...
+"vision_care\vision_care.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_vision_care
+  C:/Users/dell/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/dell/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
